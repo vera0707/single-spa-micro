@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <link rel="icon" href="/favicon.ico" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Single-Spa项目案例</title>
+  <style>
+    *{padding: 0px;margin: 0px;}
+    #fmApp #app,#boatApp #app{width:100vw;height:calc(100vh - 85px);overflow: visible;} 
+  </style>
+</head>
+<body>
+  <script type="systemjs-importmap">
+        {
+          "imports": {
+            "@fm/config": "http://10.1.193.42:4000/src/common-deps.js",
+            "@micro/navbarMain": "http://10.1.193.42:4001/js/app.js",
+            "@micro/navbarVendors": "http://10.1.193.42:4001/js/chunk-vendors.js",
+            "@micro/vueMain": "http://10.1.193.42:4002/js/app.js",
+            "@micro/vueVendors": "http://10.1.193.42:4002/js/chunk-vendors.js",
+            "@micro/fmMain": "http://10.1.193.42:4003/js/app.js",
+            "@micro/fmVendors": "http://10.1.193.42:4003/js/chunk-vendors.js",
+            "@micro/boatMain": "http://10.1.193.42:4004/js/app.js",
+            "@micro/boatVendors": "http://10.1.193.42:4004/js/chunk-vendors.js"
+          }
+        }
+      </script>
+  <script src='https://unpkg.com/systemjs@4.1.0/dist/system.js'></script>
+  <script src='https://unpkg.com/systemjs@4.1.0/dist/extras/amd.js'></script>
+  <script src='https://unpkg.com/systemjs@4.1.0/dist/extras/named-exports.js'></script>
+  <script src='https://unpkg.com/systemjs@4.1.0/dist/extras/use-default.js'></script>
+  <script>
+    // System.import('@fm/vue')
+    // System.import('@fm/vueVendors')
+  </script>
+  <!-- <script>
+    System.import('@fm/config')
+  </script> -->
+  <script type="module" src="/src/main.js"></script>
+  <div id="navbar"></div>
+</body>
+</html>

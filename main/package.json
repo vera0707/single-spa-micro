@@ -1,0 +1,19 @@
+{
+  "name": "main",
+  "version": "0.0.0",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "serve": "vite preview"
+  },
+  "dependencies": {
+    "single-spa": "^5.9.3",
+    "systemjs": "^6.11.0",
+    "vue": "^2.6.14",
+    "vue-router": "^3.5.3",
+    "vuex": "^3.6.2"
+  },
+  "devDependencies": {
+    "vite": "^2.6.4"
+  }
+}
